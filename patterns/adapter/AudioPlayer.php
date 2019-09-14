@@ -15,9 +15,6 @@ class AudioPlayer implements MediaInterface
         echo 'playing file: ' . $file . ".mp3\n";
         break;
       case 'mp4':
-        $adapter = new Adapter($type);
-        $adapter->play($file);
-        break;
       case 'wma':
         $adapter = new Adapter($type);
         $adapter->play($file);
